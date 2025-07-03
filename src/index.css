@@ -9,14 +9,14 @@
     font-weight: 400;
 }
 
-/* html,
+html,
 body,
 #root {    
-    height: 100vh;
-    background-color: rgb(21, 21, 21);
-    overflow-y: auto;
-    color: blanchedalmond;
-} */
+  height: 100vh;
+  background-color: rgb(21, 21, 21);
+  overflow-y: auto;
+  color: blanchedalmond;
+}
 
 #root {  
   display: flex;
