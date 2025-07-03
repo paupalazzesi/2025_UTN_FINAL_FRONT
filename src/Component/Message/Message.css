@@ -1,0 +1,46 @@
+.msg {
+    max-width: 70%; 
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.contact {
+    background-color: white;    
+}
+
+.me {
+    background-color: lightgreen;
+    align-self: end; 
+}
+
+.user-data {
+   align-self: end;
+   
+}
+
+.time {
+    color: grey;
+    margin-right: 4px;      
+}
+
+.status {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;    
+}
+
+.seen {   
+    background-color: blue;
+}
+
+.not-seen {
+    background-color: orange;
+}
+
+.not-received {
+     background-color: grey;
+}

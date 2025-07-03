@@ -1,0 +1,33 @@
+
+form {
+    display: grid;
+    grid-template-columns: 1fr auto;    
+    border-top: lightgray solid 1px;
+    width: 100%;
+    max-width: 1080px;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+textarea {    
+    display: block;  
+    height: 48px;
+    width: 100%;
+    border: none;
+    padding: 8px;
+    resize: none;
+    box-sizing: border-box;
+}
+textarea:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 15px 0px rgb(209, 224, 207);
+}
+
+.btn-delete {
+    display: block;    
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+}

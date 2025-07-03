@@ -1,0 +1,61 @@
+/* ContactItem.css - Inspirado en la lista de contactos de WhatsApp móvil */
+
+.contact-item-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  transition: background 0.2s;
+}
+.contact-item-link:hover {
+  background: #f5f5f5;
+}
+.contact-item-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+  border: 2px solid #25d366;
+}
+.contact-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.contact-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+.contact-item-last-time {
+  font-size: 0.85rem;
+  color: #888;
+}
+.contact-item-last-message {
+  font-size: 0.97rem;
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+.contact-item-unread {
+  background: #25d366;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  min-width: 24px;
+  text-align: center;
+}
