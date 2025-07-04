@@ -2,14 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255,255,255,0.4); /* Fondo translúcido */
-    backdrop-filter: blur(6px); /* Efecto blur */
+    background: white;
     width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
+    height: 100vh;    
 }
 
 .spinner {

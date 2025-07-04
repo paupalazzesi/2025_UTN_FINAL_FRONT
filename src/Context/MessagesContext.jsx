@@ -53,7 +53,7 @@ const MessagesContextProvider = ({ children }) => {
                 setMessages(messages)
                 setIsMessagesLoading(false)
             },
-            2000
+            1000
         )
         
     }
