@@ -2,7 +2,7 @@
 form {
     display: grid;
     grid-template-columns: 1fr auto;    
-    border-top: lightgray solid 1px;
+    border-top: var(--color-neutral-400) solid 1px;
     width: 100%;
     max-width: 1080px;
     min-width: 0;

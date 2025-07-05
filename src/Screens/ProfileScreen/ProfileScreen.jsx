@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams, Link } from 'react-router';
 import { getContactList } from '../../services/contactService';
-import './ContactDetailScreen.css';
+import './ProfileScreen.css';
 
-export default function ContactDetailScreen() {
+export default function ProfileScreen() {
     const { contact_id } = useParams();
     const contactList = getContactList();
     const contact = contactList.find(c => String(c.id) === String(contact_id));

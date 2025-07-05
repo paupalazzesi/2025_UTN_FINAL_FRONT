@@ -1,0 +1,14 @@
+
+//Base
+@use "./base/reset";
+@use "./base/global";
+
+// Variables
+@use "./variables/primitives-tokens/color";
+@use "./variables/primitives-tokens/sizes";
+@use "./variables/primitives-tokens/media-queries";
+@use "./variables/custom-properties";
+
+// Vendors
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
