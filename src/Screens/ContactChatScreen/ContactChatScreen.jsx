@@ -6,6 +6,7 @@ import {MessagesContext} from "../../Context/MessagesContext";
 import LoaderSpinner from "../../Component/LoaderSpinner/LoaderSpinner";
 import {getContactList} from "../../services/contactService";
 import "./ContactChatScreen.scss";
+import ContactImage from "../../Component/ContactImage/ContactImage";
 
 export default function ContactChatScreen() {
     const {contact_id} = useParams();
@@ -33,12 +34,8 @@ export default function ContactChatScreen() {
                 {contact && (
                     <>
                         <Link
-                            to={`/contact-detail/${contact.id}`}
-                            className="main-header_profile-img">
-                            <img
-                                src={contact.img}
-                                alt={contact.name + " profile"}                                
-                            />
+                            to={`/contact-detail/${contact.id}`}>
+                            <ContactImage name={`${contact.name} image profile`} img={contact.img} />
                         </Link>
                         <div className="main-header_info">
                             <span className="main-header_name">

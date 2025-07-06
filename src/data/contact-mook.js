@@ -6,7 +6,7 @@ const mook_data = {
     {
       id: 1,
       name: "Michael Scott",
-      last_time_connected: "Today at 10:32 AM",
+      last_time_connected: "10:32",
       img: images.michael,
       last_message: {
         id: 1,
@@ -46,7 +46,7 @@ const mook_data = {
     {
       id: 3,
       name: "Pam Beesly",
-      last_time_connected: "Today at 09:18 AM",
+      last_time_connected: "09:18",
       img: images.pam,
       last_message: {
         id: 1,
@@ -66,7 +66,7 @@ const mook_data = {
     {
       id: 4,
       name: "Dwight Schrute",
-      last_time_connected: "Today at 10:35 AM",
+      last_time_connected: "10:35",
       img: images.dwight,
       last_message: {
         id: 1,
@@ -86,7 +86,7 @@ const mook_data = {
     {
       id: 5,
       name: "Angela Martin",
-      last_time_connected: "Today at 08:50 AM",
+      last_time_connected: "08:50",
       img: images.angela,
       last_message: {
         id: 1,
@@ -106,7 +106,7 @@ const mook_data = {
     {
       id: 6,
       name: "Kevin Malone",
-      last_time_connected: "Yesterday at 07:00 PM",
+      last_time_connected: "Yesterday",
       img: images.kevin,
       last_message: {
         id: 1,
@@ -126,7 +126,7 @@ const mook_data = {
     {
       id: 7,
       name: "Stanley Hudson",
-      last_time_connected: "Today at 08:00 AM",
+      last_time_connected: "08:00",
       img:  images.stanley,
       last_message: {
         id: 1,
@@ -146,7 +146,7 @@ const mook_data = {
     {
       id: 8,
       name: "Ryan Howard",
-      last_time_connected: "Today at 10:00 AM",
+      last_time_connected: "10:00",
       img:  images.ryan,
       last_message: {
         id: 1,
@@ -186,7 +186,7 @@ const mook_data = {
     {
       id: 10,
       name: "Creed Bratton",
-      last_time_connected: "Unknown",
+      last_time_connected: "04/05/25",
       img: images.creed,
       last_message: {
         id: 1,

@@ -1,0 +1,18 @@
+.contact-image_container {
+    display: flex; 
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;    
+    border: 2px solid var(--color-brand-400);    
+    overflow: hidden;       
+}  
+
+.contact-image_img {
+  
+}
+
+a:has(.contact-image_container) {
+   cursor: pointer;
+}

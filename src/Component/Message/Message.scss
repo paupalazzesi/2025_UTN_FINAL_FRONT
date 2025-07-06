@@ -5,6 +5,7 @@
     display: grid;    
     column-gap: 16px;    
     padding: 16px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
     text-align: left;
     border-radius: 8px;
     word-break: break-all;
@@ -15,7 +16,7 @@
        background-color: white;    
     }
     &.me {
-       background-color: lightgreen;
+       background-color: var(--color-brand-100);
        align-self: end; 
     }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router';
 import { getContactList } from '../../services/contactService';
-import './ProfileScreen.css';
+import './ProfileScreen.scss';
 
 export default function ProfileScreen() {
     const { contact_id } = useParams();
