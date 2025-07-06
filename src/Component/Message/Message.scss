@@ -1,0 +1,52 @@
+.message {
+    max-width: 70%; 
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+
+    // User type
+    &.contact {
+       background-color: white;    
+    }
+    &.me {
+       background-color: lightgreen;
+       align-self: end; 
+    }
+
+    &_data {
+        align-self: end; 
+        
+        .message_time {
+            color: grey;
+            margin-right: 4px;      
+        }
+    }
+
+    &_status {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;  
+
+       // message status
+        &.seen {   
+           background-color: blue;
+        }
+        &.not-seen {   
+           background-color: orange;
+        }
+        &.not-received {   
+           background-color: grey;
+        }
+
+    }
+
+    &_btn-delete {       
+        background-color: transparent;
+        border: none;
+        padding: 4px;
+    }
+    
+}

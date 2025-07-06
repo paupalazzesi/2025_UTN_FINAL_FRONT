@@ -1,0 +1,23 @@
+.new-message-form {
+    display: grid;
+    grid-template-columns: 1fr auto;    
+    border-top: var(--color-neutral-400) solid 1px;
+
+
+    &_input {
+        display: block;  
+        height: 48px;   
+        border: none;
+        padding: 8px;
+        resize: none;  
+        width: 100%;  
+        
+        &:focus {
+            outline: none;
+            box-shadow: inset 0px 0px 15px 0px rgb(209, 224, 207);
+        }
+    }
+
+    
+}
+

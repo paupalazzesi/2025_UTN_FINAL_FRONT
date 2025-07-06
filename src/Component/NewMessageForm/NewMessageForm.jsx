@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { MessagesContext } from '../../Context/MessagesContext'
 import { useParams } from 'react-router';
-import './NewMessageForm.css'
+import './NewMessageForm.scss'
 
 export default function NewMessageForm() {
     const { addNewMessage } = useContext(MessagesContext)
@@ -29,12 +29,14 @@ export default function NewMessageForm() {
     }
 
     return (
-        <form onSubmit={handleSubmitNewMessage}>
-            <div>
+        <form className="new-message-form" onSubmit={handleSubmitNewMessage}>
+            <p>
                 <label htmlFor="text"></label>
-                <textarea id='text' name='text' onKeyDown={handleKeyDown}></textarea>
-            </div>
-            <button type='submit'>Enviar mensaje</button>
+                <textarea className="new-message-form_input" id='text' name='text' onKeyDown={handleKeyDown} ></textarea>
+            </p>
+            <button type='submit'>
+                <i class="bi bi-send"></i>
+            </button>
         </form>
     )
 }
