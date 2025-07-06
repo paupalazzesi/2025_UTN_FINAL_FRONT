@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Message from '../Message/Message'
 import { MessagesContext } from '../../Context/MessagesContext'
-import './Chat.css'
+import './Chat.scss'
 
 export default function Chat() {
     const {messages} = useContext(MessagesContext)

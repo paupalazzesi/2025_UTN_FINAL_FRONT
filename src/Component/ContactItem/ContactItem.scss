@@ -1,4 +1,4 @@
-/* ContactItem.css - Inspirado en la lista de contactos de WhatsApp móvil */
+@use "../../Styles/utilities/truncate-text";
 
 .contact-item {
   display: flex;
@@ -14,21 +14,24 @@
     background-color: var(--color-neutral-100);
   }
 
-  &_content {
-    flex: 1;
+  &_content {    
     display: flex;
     flex-direction: column;
     gap: 2px;
+    flex: 1;
+    min-width: 0;
   }
 
   &_info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+   
     .contact-item_name {
       font-size: 1.1rem;
       font-weight: 600;
+      @include truncate-text.truncate();
+      max-width: 100%;
     }
     .contact-item_last-time {
       font-size: 0.85rem;
@@ -39,10 +42,8 @@
   &_last-message {
     font-size: 0.97rem;
     color: var(--color-neutral-450);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 220px;
+    @include truncate-text.truncate();
+    max-width: 100%;
   }
 
   &_unread {
