@@ -28,18 +28,21 @@
         display: flex;
         align-items: center; 
         margin-right: 12 
-    }     
+    } 
+    
+    &_contact {
+        display: flex;        
+        gap: 16px;
+    }
 
     &_info {
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
 
     &_name {
         font-size: 1.15rem;
-        font-weight: 600;
-        width: 100%;
+        font-weight: 600;        
         color: var(--color-neutral-100);
     }
     

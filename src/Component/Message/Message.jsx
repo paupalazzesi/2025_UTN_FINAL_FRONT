@@ -5,13 +5,23 @@ import './Message.scss'
 export default function Message({ user, time, id, text, status}) {
     
     const {handleDeleteMessage} = useContext(MessagesContext)  
-
     
     const messageClass = user === 'YO' ? 'me' : 'contact';
     
-    let statusClass = 'status not-received';
-    if (status === 'visto' || status === 'seen') statusClass = 'seen';
-    else if (status === 'no-visto' || status === 'not-seen') statusClass = 'not-seen';
+    let statusClass = '';
+    if (user === 'YO') {
+        switch (status) {
+            case 'non-received':
+                statusClass = 'non-received';
+                break;
+            case 'not-seen':
+                statusClass = 'not-seen';
+                break;
+            default:
+                statusClass = 'seen';
+                break;
+        }
+    }
 
     return (
         <div className={"message " + messageClass}>
@@ -23,7 +33,11 @@ export default function Message({ user, time, id, text, status}) {
             <span className="message_text">{text}</span>
             <div className='message_data'>
                 <span className="message_time">{time}</span>
-                <span className={"message_status " + statusClass}></span>
+                <span className={"message_status " + statusClass}>
+                  {statusClass === 'non-received' && <i className="bi bi-check2 message_status non-received"></i>}
+                  {statusClass === 'not-seen' && <i className="bi bi-check2-all message_status not-seen"></i>}
+                  {statusClass === 'seen' && <i className="bi bi-check2-all message_status seen"></i>}
+                </span>
             </div>
             
         </div>

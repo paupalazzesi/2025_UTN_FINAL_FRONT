@@ -1,8 +1,6 @@
 import { createContext, useState } from "react";
 import { getContactList } from "../services/contactService";
 
-
-
 export const ContactContext = createContext({
     contacts: [],
     isLoadingContacts: true

@@ -1,16 +1,16 @@
-import React, {useContext, useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import Chat from "../../Component/Chat/Chat";
 import NewMessageForm from "../../Component/NewMessageForm/NewMessageForm";
-import {useParams, Link} from "react-router";
-import {MessagesContext} from "../../Context/MessagesContext";
+import { useParams, Link } from "react-router";
+import { MessagesContext } from "../../Context/MessagesContext";
 import LoaderSpinner from "../../Component/LoaderSpinner/LoaderSpinner";
-import {getContactList} from "../../services/contactService";
+import { getContactList } from "../../services/contactService";
 import "./ContactChatScreen.scss";
 import ContactImage from "../../Component/ContactImage/ContactImage";
 
 export default function ContactChatScreen() {
-    const {contact_id} = useParams();
-    const {loadMessages, isMessagesLoading} = useContext(MessagesContext);
+    const { contact_id } = useParams();
+    const { loadMessages, isMessagesLoading } = useContext(MessagesContext);
 
     const contactList = getContactList();
     const contact = contactList.find(
@@ -28,25 +28,28 @@ export default function ContactChatScreen() {
     return (
         <div className="contact-chat-screen">
             <header className="main-header">
-                <Link to="/" className="main-header_back-button">
+                <Link 
+                    to="/" className="main-header_back-button"
+                >
                     <i class="bi bi-arrow-left"></i>
                 </Link>
-                {contact && (
-                    <>
-                        <Link
-                            to={`/contact-detail/${contact.id}`}>
-                            <ContactImage name={`${contact.name} image profile`} img={contact.img} />
-                        </Link>
-                        <div className="main-header_info">
-                            <span className="main-header_name">
-                                {contact.name}
-                            </span>
-                            <span className="main-header_last-time">
-                                Últ. vez: {contact.last_time_connected}
-                            </span>
-                        </div>
-                    </>
-                )}
+                <Link
+                    to={`/contact-detail/${contact.id}`}
+                    className="main-header_contact"
+                >
+                    <ContactImage
+                        name={`${contact.name} image profile`}
+                        img={contact.img}
+                    />
+                    <div className="main-header_info">
+                        <h1 className="main-header_name">
+                            {contact.name}
+                        </h1>
+                        <span className="main-header_last-time">
+                            Últ. vez: {contact.last_time_connected}
+                        </span>
+                    </div>
+                </Link>
             </header>
             <Chat />
             <NewMessageForm />

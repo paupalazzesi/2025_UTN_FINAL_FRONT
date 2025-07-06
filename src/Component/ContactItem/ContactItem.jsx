@@ -13,7 +13,8 @@ const ContactItem = ({name, id, last_time_connected, img, last_message, unread_m
                     <span className="contact-item_name">{name}</span>
                     <span className="contact-item_last-time">{last_time_connected}</span>
                 </div>
-                <div className="contact-item_last-message">{last_message.text}</div>
+                <span className="contact-item_status"></span>
+                <span className="contact-item_last-message">{last_message.text}</span>
             </div>
             {unread_messages > 0 && (
                 <span className="contact-item_unread">{unread_messages}</span>
