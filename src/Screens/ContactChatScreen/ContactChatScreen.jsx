@@ -26,26 +26,25 @@ export default function ContactChatScreen() {
 
     return (
         <div className="contact-chat-screen">
-            <header className="home-header">
-                <Link to="/" className="home-header-icon">
+            <header className="main-header">
+                <Link to="/" className="main-header_back-button">
                     <i class="bi bi-arrow-left"></i>
                 </Link>
                 {contact && (
                     <>
                         <Link
                             to={`/contact-detail/${contact.id}`}
-                            className="home-header-img">
+                            className="main-header_profile-img">
                             <img
                                 src={contact.img}
-                                alt={contact.name + " profile"}
-                                className="home-header-img"
+                                alt={contact.name + " profile"}                                
                             />
                         </Link>
-                        <div className="home-header-info">
-                            <span className="home-header-name">
+                        <div className="main-header_info">
+                            <span className="main-header_name">
                                 {contact.name}
                             </span>
-                            <span className="home-header-last-time">
+                            <span className="main-header_last-time">
                                 Últ. vez: {contact.last_time_connected}
                             </span>
                         </div>

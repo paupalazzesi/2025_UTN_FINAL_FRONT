@@ -1,0 +1,63 @@
+.main-header {
+    background-color: var(--color-brand-800);
+    color: var(--color-neutral-100);
+
+    display: flex;
+    align-items: center;
+    background: var(--color-brand-800);
+               
+    gap: 16px;  
+    padding: 12px 20px;   
+    
+    &_title {
+        font-size: 1.7rem;
+        font-weight: 700;
+        letter-spacing: 1px; 
+        color: var(--color-neutral-100); 
+    }
+
+    &_logo {
+        color: var(--color-brand-400);
+        font-size: 2.1rem;
+        margin-right: 8px;
+    }
+
+    &_back-button {
+        color: inherit; 
+        display: flex;
+        align-items: center; 
+        margin-right: 12 
+    }      
+
+    &_profile-img {
+        display: flex; 
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;             
+        border: 2px solid #25d366;
+        cursor: pointer;       
+    }  
+    
+    &_info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &_name {
+        font-size: 1.15rem;
+        font-weight: 600;
+        width: 100%;
+        color: var(--color-neutral-100);
+    }
+    
+    &_last-time {
+        font-size: 0.9rem;
+        color: #d0f8ce;
+        width: 100%;
+    }
+}
+

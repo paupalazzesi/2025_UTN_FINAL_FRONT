@@ -3,16 +3,10 @@
 html,
 body,
 #root {    
-  height: 100vh;
+  height: 100vh;  
+  overflow-y: hidden;
   background-color: var(--color-neutral-200);
-  overflow-y: auto;
   color: var(--color-font-base);
-}
-
-#root {  
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 //Scrollbar styles

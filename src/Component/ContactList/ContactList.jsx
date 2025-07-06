@@ -17,14 +17,8 @@ const ContactsList = () => {
                     (contact) => {
                         return <ContactItem
                             key={contact.id}
-                            id={contact.id}
-                            name={contact.name}
-                            last_time_connected={contact.last_time_connected}
-                            img={contact.img}
-                            last_message={contact.last_message}
-                            unread_messages={contact.unread_messages}
-                        />
-                        /* O mas facil <ContactItem key={contact.id} {...contact}/> */
+                            {...contact}
+                        />                        
                     }
                 )
             }
