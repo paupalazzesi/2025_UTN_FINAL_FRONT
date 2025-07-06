@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { ContactContext } from '../../Context/ContactContext'
 import ContactsList from '../../Component/ContactList/ContactList'
 import { FaWhatsapp } from 'react-icons/fa';
-import './HomeScreen.css';
+import './HomeScreen.scss';
 
 export default function HomeScreen() {
     const { contacts } = useContext(ContactContext)

@@ -1,13 +1,14 @@
 .message {
     width: fit-content; 
+    min-width: 200px;
     max-width: 40%;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: grid;    
     column-gap: 16px;    
     padding: 16px;
     text-align: left;
     border-radius: 8px;
     word-break: break-all;
+    position: relative;
 
     // User type
     &.contact {
@@ -19,8 +20,11 @@
     }
 
     &_data {
-        align-self: end;         
+        align-self: end;    
+        justify-self: end;       
         .message_time {
+            align-items: end;
+            font-size: 12px;
             color: grey;
             margin-right: 4px;      
         }
@@ -45,11 +49,23 @@
 
     }
 
-    &_btn-delete {       
+    &_btn-delete {  
+        position: absolute; 
+        top: 30%;
+        left: -25px;    
         background-color: transparent;
         border: none;
-        padding: 4px;
-        grid-column: 2;
-    }
-    
+        padding: 4px;        
+        font-size: 12px;
+        opacity: 0;
+    }  
 }
+
+// Delete button visible on hover
+.message:has(.message_btn-delete) {
+    cursor: pointer;
+    &:hover .message_btn-delete {
+        opacity: 1;    
+    }
+}
+

@@ -5,7 +5,7 @@ import {useParams, Link} from "react-router";
 import {MessagesContext} from "../../Context/MessagesContext";
 import LoaderSpinner from "../../Component/LoaderSpinner/LoaderSpinner";
 import {getContactList} from "../../services/contactService";
-import "./ContactChatScreen.css";
+import "./ContactChatScreen.scss";
 
 export default function ContactChatScreen() {
     const {contact_id} = useParams();

@@ -15,16 +15,17 @@ export default function Message({ user, time, id, text, status}) {
 
     return (
         <div className={"message " + messageClass}>
-            <span className="message_text">{text}</span>
-            <div className='message_data'>
-                <span className="message_time">{time}</span>
-                <span className={"message_status " + statusClass}></span>
-            </div>
             {user === 'YO' && (
                 <button className="message_btn-delete" onClick={() => { handleDeleteMessage(id) }}>
                     <i className="bi bi-trash3"></i>
                 </button>
             )}
+            <span className="message_text">{text}</span>
+            <div className='message_data'>
+                <span className="message_time">{time}</span>
+                <span className={"message_status " + statusClass}></span>
+            </div>
+            
         </div>
     )
 }
