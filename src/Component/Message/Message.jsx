@@ -15,7 +15,7 @@ export default function Message({ user, time, id, text, status}) {
 
     return (
         <div className={"message " + messageClass}>
-            <span className="message-text">{text}</span>
+            <span className="message_text">{text}</span>
             <div className='message_data'>
                 <span className="message_time">{time}</span>
                 <span className={"message_status " + statusClass}></span>

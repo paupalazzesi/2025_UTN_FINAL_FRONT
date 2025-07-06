@@ -1,10 +1,13 @@
 .message {
-    max-width: 70%; 
+    width: fit-content; 
+    max-width: 40%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 16px;    
     padding: 16px;
     text-align: left;
-    display: flex;
-    flex-direction: column;
     border-radius: 8px;
+    word-break: break-all;
 
     // User type
     &.contact {
@@ -16,8 +19,7 @@
     }
 
     &_data {
-        align-self: end; 
-        
+        align-self: end;         
         .message_time {
             color: grey;
             margin-right: 4px;      
@@ -47,6 +49,7 @@
         background-color: transparent;
         border: none;
         padding: 4px;
+        grid-column: 2;
     }
     
 }
