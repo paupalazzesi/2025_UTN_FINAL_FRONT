@@ -11,7 +11,7 @@ const ContactsList = () => {
         )
     }
     return (
-        <div>
+        <div className="contact-list">
             {
                 contacts.map(
                     (contact) => {

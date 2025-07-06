@@ -4,7 +4,7 @@ html,
 body,
 #root {    
   height: 100vh;
-  background-color: var(--background-color);
+  background-color: var(--color-neutral-200);
   overflow-y: auto;
   color: var(--color-font-base);
 }
@@ -18,6 +18,10 @@ body,
 //Scrollbar styles
 * {
     @include custom-scrollbar.scrollbars(6px, var(--color-neutral-400), var(--color-neutral-200));
+}
+
+a {
+    text-decoration: none;
 }
 
 // Text

@@ -7,13 +7,14 @@ import './HomeScreen.css';
 export default function HomeScreen() {
     const { contacts } = useContext(ContactContext)
     return (
-        <div className="contact-screen-main">
-            <div className="contact-header">
-                <FaWhatsapp className="contact-header-icon" /> WhatsApp
-            </div>
-            <div className="contact-list-scroll">
+        <div className="home-screen">
+            <header className="contact-header">
+                <FaWhatsapp className="contact-header-icon" />
+                <h1 className='header-title'>WhatsApp</h1>
+            </header>
+            <main className="contact-list-scroll">
                 <ContactsList />
-            </div>
+            </main>
         </div>
     )
 }

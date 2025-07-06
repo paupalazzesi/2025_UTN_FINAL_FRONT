@@ -13,7 +13,7 @@ export default function ContactChatScreen() {
 
     const contactList = getContactList();
     const contact = contactList.find(
-        (c) => String(c.id) === String(contact_id)
+        (contact) => String(contact.id) === String(contact_id)
     );
 
     useEffect(() => {
@@ -25,7 +25,7 @@ export default function ContactChatScreen() {
     }
 
     return (
-        <div className="home-main-container">
+        <div className="contact-chat-screen">
             <header className="home-header">
                 <Link to="/" className="home-header-icon">
                     <i class="bi bi-arrow-left"></i>
