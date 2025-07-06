@@ -7,6 +7,7 @@ body,
   overflow-y: hidden;
   background-color: var(--color-neutral-200);
   color: var(--color-font-base);
+  font-size: var(--fs-base)  
 }
 
 //Scrollbar styles
@@ -26,24 +27,4 @@ p, span, a, li, label, button, input, textarea, div {
     font-size: var(--fs-base);
     line-height: var(--lh-base);
     color: var(--color-font-base);
-
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: var(--ff-base);
-    font-style: normal;
-    font-weight: var(--fw-base);
-    font-size: var(--fs-base);
-    line-height: var(--lh-base);
-    color: var(--color-font-base);
-}
-
-h1 {
-    font-size: 2rem;
-}
-h2 {
-    font-size: 1.75rem;
-}
-h3 {
-    font-size: 1.5rem;
 }

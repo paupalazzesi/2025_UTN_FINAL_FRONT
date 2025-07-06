@@ -1,8 +1,9 @@
 .contact-image_container {
     display: flex; 
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    flex-shrink: 0;
+    width: var(--size-4xl);
+    height: var(--size-4xl);
     border-radius: 50%;
     object-fit: cover;    
     border: 2px solid var(--color-brand-400);    

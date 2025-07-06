@@ -26,3 +26,13 @@ button {
     }
 }
 
+@media screen and (min-width: 1920px) {
+    .message-list {
+        gap: 0.83vw;
+        padding: 0.83vw;
+    }
+    button {
+        padding-inline: 0.83vw;
+    }
+}
+
