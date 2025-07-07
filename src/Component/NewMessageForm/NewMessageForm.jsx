@@ -34,7 +34,7 @@ export default function NewMessageForm() {
                 <label htmlFor="text"></label>
                 <textarea className="new-message-form_input" id='text' name='text' onKeyDown={handleKeyDown} ></textarea>
             </p>
-            <button type='submit'>
+            <button type='submit' className='btn-send'>
                 <i class="bi bi-send"></i>
             </button>
         </form>
