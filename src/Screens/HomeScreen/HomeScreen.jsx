@@ -10,9 +10,9 @@ export default function HomeScreen() {
         <div className="home-screen">
             <header className="main-header">
                 <FaWhatsapp className="main-header_logo" />
-                <h1 className='main-header_title'>WhatsApp</h1>
+                <h1 className='main-header_main-title'>WhatsApp</h1>
             </header>
-            <main className="contact-list-scroll">
+            <main className='home-screen_contact-list_scroll'>
                 <ContactsList />
             </main>
         </div>

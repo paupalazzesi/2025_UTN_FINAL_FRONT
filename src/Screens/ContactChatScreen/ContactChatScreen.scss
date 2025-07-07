@@ -1,16 +1,5 @@
 .contact-chat-screen {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	height: 100vh;
 }
-
-
-/* El scroll solo en el chat */
-.message-list {  
-  overflow-y: auto;
-  height: 100%;  
-  width: 100%;  
-}
-
-
-

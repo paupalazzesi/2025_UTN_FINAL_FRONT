@@ -1,4 +1,4 @@
-import './LoaderSpinner.css'
+import './LoaderSpinner.scss'
 export default function LoaderSpinner() {
     return (
         <div className="spinner-container">

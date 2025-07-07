@@ -1,5 +1,4 @@
-.message-list {
-    /* width: 300px; */
+.chat {    
     height: 100%;
     background-color: beige;
     display: flex;
@@ -8,22 +7,7 @@
     color: black;
     padding: 16px;
     overflow-y: auto;  
-    scrollbar-gutter: stable both-edges ; 
-}
-
-button {
-    font-family: inherit;
-    font-weight: 700;
-    color: rgb(64, 64, 64);
-    background-color: white;
-    border: none;
-    border-left: lightgray solid 1px ;
-    padding-inline: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    &:hover {
-        color: rgb(27, 107, 59);
-    }
+    scrollbar-gutter: stable both-edges; 
 }
 
 @media screen and (min-width: 1920px) {

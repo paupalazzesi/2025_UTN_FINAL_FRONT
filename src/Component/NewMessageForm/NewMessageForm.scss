@@ -1,33 +1,44 @@
 .new-message-form {
     display: grid;
-    grid-template-columns: 1fr auto;    
+    grid-template-columns: 1fr auto;
     border-top: var(--color-neutral-400) solid 1px;
 
-
     &_input {
-        display: block;  
-        height: 48px;   
+        display: block;
+        height: 48px;
         border: none;
         padding: 8px;
-        resize: none;  
-        width: 100%;  
-        
+        resize: none;
+        width: 100%;
+
         &:focus {
             outline: none;
             box-shadow: inset 0px 0px 15px 0px rgb(209, 224, 207);
         }
     }
+
+    button {
+        font-family: inherit;
+        font-weight: 700;
+        color: rgb(64, 64, 64);
+        background-color: white;
+        border: none;
+        border-left: lightgray solid 1px;
+        padding-inline: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            color: rgb(27, 107, 59);
+        }
+    }
 }
 
 @media screen and (min-width: 1920px) {
-  .new-message-form_input {
-    height: 2.5vw;
-    padding: 0.42vw;
-  }
-  .new-message-form_input:focus {
-    box-shadow: inset 0vw 0vw 0.78vw 0vw rgb(209, 224, 207);
-  }
+    .new-message-form_input {
+        height: 2.5vw;
+        padding: 0.42vw;
+    }
+    .new-message-form_input:focus {
+        box-shadow: inset 0vw 0vw 0.78vw 0vw rgb(209, 224, 207);
+    }
 }
-
-    
-

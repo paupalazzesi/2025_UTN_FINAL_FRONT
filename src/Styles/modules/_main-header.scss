@@ -10,11 +10,15 @@
     gap: 16px;  
     padding: 12px 20px;   
     
-    &_title {
+    &_main-title {
         font-size: 1.7rem;
         font-weight: 700;
         letter-spacing: 1px; 
         color: var(--color-neutral-100); 
+    }
+
+    &_section-title {
+        font-size: 1.25rem;
     }
 
     &_logo {

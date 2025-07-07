@@ -1,9 +1,10 @@
 .home-screen {
-  
-}
-.contact-list-scroll {
-  overflow-y: auto;
-  height: 100vh;  
-  background-color: var(--color-white); 
-}
+	display: grid;
+	grid-template-rows: auto 1fr;
+	height: 100vh;
 
+	&_contact-list_scroll {
+		overflow-y: auto;
+		background-color: var(--color-white);
+	}
+}

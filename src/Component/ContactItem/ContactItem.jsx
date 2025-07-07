@@ -7,7 +7,7 @@ const ContactItem = ({name, id, last_time_connected, img, last_message, unread_m
     
     return (
         <Link to={`/contacts/${id}/messages`} className="contact-item">            
-            <ContactImage name={`${name} image profile`} img={img} />
+            <ContactImage name={name} img={img} />
             <div className="contact-item_content">
                 <div className="contact-item_info">
                     <span className="contact-item_name">{name}</span>

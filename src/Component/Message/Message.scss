@@ -1,87 +1,84 @@
 .message {
-    width: fit-content; 
-    min-width: 200px;
-    max-width: 40%;
-    display: grid;    
-    column-gap: 16px;    
-    padding: 16px;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
-    text-align: left;
-    border-radius: 8px;
-    word-break: break-all;
-    position: relative;
+	width: fit-content;
+	min-width: 200px;
+	max-width: 40%;
+	display: grid;
+	column-gap: 16px;
+	padding: 16px;
+	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+	text-align: left;
+	border-radius: 8px;
+	word-break: break-all;
+	position: relative;
 
-    // User type
-    &.contact {
-       background-color: white;    
-    }
-    &.me {
-       background-color: var(--color-brand-100);
-       align-self: end; 
-    }
+	// User type
+	&.contact {
+		background-color: white;
+	}
+	&.me {
+		background-color: var(--color-brand-100);
+		align-self: end;
+	}
 
-    &_data {
-        align-self: end;    
-        justify-self: end;       
-        .message_time {
-            align-items: end;
-            font-size: 12px;
-            color: grey;
-            margin-right: 4px;      
-        }
-    }
+	&_data {
+		align-self: end;
+		justify-self: end;
+		.message_time {
+			align-items: end;
+			font-size: 12px;
+			color: grey;
+			margin-right: 4px;
+		}
+	}
 
-    &_status {
+	&_status {
+		// message status
+		&.seen {
+			color: var(--color-accent-300);
+		}
+		&.not-seen {
+			color: var(--color-neutral-500);
+		}
+		&.not-received {
+			color: var(--color-neutral-500);
+		}
+	}
 
-       // message status
-        &.seen {   
-           color: var(--color-accent-300);
-        }
-        &.not-seen {   
-           color: var(--color-neutral-500);
-        }
-        &.not-received {   
-           color: var(--color-neutral-500);
-        }
-
-    }
-
-    &_btn-delete {  
-        position: absolute; 
-        top: 30%;
-        left: -25px;    
-        background-color: transparent;
-        border: none;
-        padding: 4px;        
-        font-size: 12px;
-        opacity: 0;
-    }  
+	&_btn-delete {
+		position: absolute;
+		top: 30%;
+		left: -25px;
+		background-color: transparent;
+		border: none;
+		padding: 4px;
+		font-size: 12px;
+		opacity: 0;
+	}
 }
 
 // Delete button visible on hover
 .message:has(.message_btn-delete) {
-    cursor: pointer;
-    &:hover .message_btn-delete {
-        opacity: 1;    
-    }
+	cursor: pointer;
+	&:hover .message_btn-delete {
+		opacity: 1;
+	}
 }
 
-
 @media screen and (min-width: 1920px) {
-  .message {
-    min-width: 10.42vw;
-    column-gap: 0.83vw;
-    padding: 0.83vw;
-    box-shadow: 0.05vw 0.05vw 0.26vw 0vw rgba(0,0,0,0.25);
-    border-radius: 0.42vw;
-  }
-  .message_data .message_time {
-    font-size: 0.63vw;
-    margin-right: 0.21vw;
-  }
-  .message_btn-delete {
-    left: -1.3vw;
-    padding: 0.21vw;
-    font-size: 0.63vw;
-  }
+	.message {
+		min-width: 10.42vw;
+		column-gap: 0.83vw;
+		padding: 0.83vw;
+		box-shadow: 0.05vw 0.05vw 0.26vw 0vw rgba(0, 0, 0, 0.25);
+		border-radius: 0.42vw;
+	}
+	.message_data .message_time {
+		font-size: 0.63vw;
+		margin-right: 0.21vw;
+	}
+	.message_btn-delete {
+		left: -1.3vw;
+		padding: 0.21vw;
+		font-size: 0.63vw;
+	}
 }

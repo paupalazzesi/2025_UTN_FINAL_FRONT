@@ -7,7 +7,7 @@ export default function Chat() {
     const {messages} = useContext(MessagesContext)
     
     return (
-        <div className='message-list'>
+        <div className='chat'>
             {
                 messages.map((message) => {
                     return (
