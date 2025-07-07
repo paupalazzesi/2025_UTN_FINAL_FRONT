@@ -32,7 +32,7 @@ export default function NewMessageForm() {
         <form className="new-message-form" onSubmit={handleSubmitNewMessage}>
             <p>
                 <label htmlFor="text"></label>
-                <textarea className="new-message-form_input" id='text' name='text' onKeyDown={handleKeyDown} ></textarea>
+                <textarea className="new-message-form_input" id='text' name='text' placeholder='Type a message' onKeyDown={handleKeyDown} ></textarea>
             </p>
             <button type='submit' className='btn-send'>
                 <i class="bi bi-send"></i>

@@ -1,7 +1,6 @@
-import React from 'react';
 import { useParams, Link } from 'react-router';
 import { getContactList } from '../../services/contactService';
-import ContactImage from "../../component/ContactImage/ContactImage" 
+import ContactImage from '../../component/ContactImage/ContactImage'; 
 import './ProfileScreen.scss';
 
 export default function ProfileScreen() {
@@ -29,7 +28,7 @@ export default function ProfileScreen() {
 
                 <div className='contact-detail_actions'>
                     <button><i class="bi bi-telephone"></i>Call</button>
-                    <button><i class="bi bi-camera-video"></i>Video Call</button>
+                    <button><i class="bi bi-camera-video"></i>Video</button>
                     <button><i class="bi bi-search"></i>Search</button>
                 </div>              
                 

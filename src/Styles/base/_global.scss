@@ -5,7 +5,6 @@ body,
 #root {    
   height: 100vh;  
   overflow-y: hidden;
-  background-color: var(--color-neutral-200);
   color: var(--color-font-base);
   font-size: var(--fs-base)  
 }
@@ -17,6 +16,10 @@ body,
 
 a {
     text-decoration: none;
+}
+
+main {
+    padding-inline: 1rem;
 }
 
 // Text
