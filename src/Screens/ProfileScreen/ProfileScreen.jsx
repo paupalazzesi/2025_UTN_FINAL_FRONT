@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router';
 import { getContactList } from '../../services/contactService';
-import ContactImage from '../../component/ContactImage/ContactImage'; 
+import ContactImage from '../../Component/ContactImage/ContactImage'; 
 import './ProfileScreen.scss';
 
 export default function ProfileScreen() {

@@ -1,0 +1,38 @@
+.theme-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1.7rem;
+	padding: 6px 12px;
+	border-radius: 50%;
+	transition: background 0.2s;
+
+	&:hover,
+	&:focus {
+		background: var(--color-neutral-20, #e1e1e0);
+		outline: none;
+	}
+
+	&.dark {
+		color: #ffe066;
+		&:hover,
+		&:focus {
+			background: #232d36;
+		}
+	}
+
+	&.light {
+		color: #f5b041;
+		&:hover,
+		&:focus {
+			background: #ececec;
+		}
+	}
+
+	.theme-toggle__icon {
+		pointer-events: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
