@@ -1,11 +1,12 @@
 .message {
+	color: var(--color-main-text);
 	width: fit-content;
 	min-width: 200px;
 	max-width: 40%;
 	display: grid;
 	column-gap: 16px;
 	padding: 16px;
-	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: var(--elevation-02);
 	text-align: left;
 	border-radius: 8px;
 	word-break: break-all;
@@ -13,10 +14,10 @@
 
 	// User type
 	&.contact {
-		background-color: white;
+		background-color: var(--color-message-background-contact);
 	}
 	&.me {
-		background-color: var(--color-brand-100);
+		background-color: var(--color-message-background-user);
 		align-self: end;
 	}
 
@@ -26,7 +27,7 @@
 		.message_time {
 			align-items: end;
 			font-size: 12px;
-			color: grey;
+			color: var(--color-data-text);
 			margin-right: 4px;
 		}
 	}
@@ -34,13 +35,13 @@
 	&_status {
 		// message status
 		&.seen {
-			color: var(--color-accent-300);
+			color: var(--color-status-read);
 		}
 		&.not-seen {
-			color: var(--color-neutral-500);
+			color: var(--color-status-unread);
 		}
 		&.not-received {
-			color: var(--color-neutral-500);
+			color: var(--color-status-unread);
 		}
 	}
 

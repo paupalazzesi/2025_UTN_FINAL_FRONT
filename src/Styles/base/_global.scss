@@ -2,32 +2,40 @@
 
 html,
 body,
-#root {    
-  height: 100vh;  
-  overflow-y: hidden;
-  color: var(--color-font-base);
-  font-size: var(--fs-base)  
+#root {
+	height: 100vh;
+	overflow-y: hidden;
+	color: var(--color-main-text);
+	font-size: var(--fs-base);
 }
 
 //Scrollbar styles
 * {
-    @include custom-scrollbar.scrollbars(6px, var(--color-neutral-400), var(--color-neutral-200));
+	@include custom-scrollbar.scrollbars(
+		6px,
+		var(--color-scrollbar-thumb),
+		var(--color-stroke-subtle)		
+	);
 }
 
 a {
-    text-decoration: none;
-}
-
-main {
-    padding-inline: 1rem;
+	text-decoration: none;
 }
 
 // Text
-p, span, a, li, label, button, input, textarea, div {
-    font-family: var(--ff-base);
-    font-style: normal;
-    font-weight: var(--fw-base);
-    font-size: var(--fs-base);
-    line-height: var(--lh-base);
-    color: var(--color-font-base);
+p,
+span,
+a,
+li,
+label,
+button,
+input,
+textarea,
+div {
+	font-family: var(--ff-base);
+	font-style: normal;
+	font-weight: var(--fw-base);
+	font-size: var(--fs-base);
+	line-height: var(--lh-base);
+	color: var(--color-font-base);
 }

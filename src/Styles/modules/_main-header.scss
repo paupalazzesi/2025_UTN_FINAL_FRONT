@@ -1,59 +1,60 @@
 .main-header {
-    height: var(--main-header-height);
-    background-color: var(--color-brand-800);
-    color: var(--color-neutral-100);
+	height: var(--main-header-height);
+	background-color: var(--color-main-background);
+	color: var(--color-header-text);
+	z-index: 1000;
+	box-shadow: var(--elevation-01);
 
-    display: flex;
-    align-items: center;
-    background: var(--color-brand-800);
-               
-    gap: 16px;  
-    padding: 12px 20px;   
-    
-    &_main-title {
-        font-size: 1.7rem;
-        font-weight: 700;
-        letter-spacing: 1px; 
-        color: var(--color-neutral-100); 
-    }
+	display: flex;
+	align-items: center;	
 
-    &_section-title {
-        font-size: 1.25rem;
-    }
+	gap: 16px;
+	padding: 12px 20px;
 
-    &_logo {
-        color: var(--color-brand-400);
-        font-size: 2.1rem;
-        margin-right: 8px;
-    }
+	&_main-title {
+		font-size: 1.7rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+		color: var(--color-logo);
+	}
 
-    &_back-button {
-        color: inherit; 
-        display: flex;
-        align-items: center; 
-        margin-right: 12 
-    } 
-    
-    &_contact {
-        display: flex;        
-        gap: 16px;
-    }
+	&_section-title {
+		font-size: 1.25rem;
+		color: var(--color-page-text);
+	}
 
-    &_info {
-        display: flex;
-        flex-direction: column;
-    }
+	&_logo {
+		color: var(--color-logo);
+		font-size: 2.1rem;
+		margin-right: 8px;
+	}
 
-    &_name {
-        font-size: 1.25rem;
-        font-weight: 600;        
-        color: var(--color-neutral-100);
-    }
-    
-    &_last-time {
-        font-size: 0.9rem;
-        color: #d0f8ce;
-        width: 100%;
-    }
+	&_back-button {
+		color: inherit;
+		display: flex;
+		align-items: center;
+		margin-right: 12;
+	}
+
+	&_contact {
+		display: flex;
+		gap: 16px;
+	}
+
+	&_info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&_name {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--color-header-text);
+	}
+
+	&_last-time {
+		font-size: 0.9rem;
+		color: var(--color-secondary-text);
+		width: 100%;
+	}
 }
-

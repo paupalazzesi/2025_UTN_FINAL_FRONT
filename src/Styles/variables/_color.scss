@@ -1,27 +1,94 @@
-:root {    
-  --color-brand-100: #dcf8c6;
-  --color-brand-200: #d8fcd2;
-  --color-brand-400: #25d366;
-  --color-brand-500: #128c7e;
-  --color-brand-800: #075e54;
-  --color-brand-900: #111b21;
+@use "sass:color";
 
-  --color-accent-100: #53bdeb;
-  --color-accent-300: #53bdeb;
+/** Base colors */
+$clr-primary-0: #ffffff;
+$clr-primary-10: #d8efde;
+$clr-primary-20: #b1debe;
+$clr-primary-30: #89ce9f;
+$clr-primary-40: #5dbc80;
+$clr-primary-50: #1dab62;
+$clr-primary-60: #20864e;
+$clr-primary-70: #1f633b;
+$clr-primary-80: #1a4229;
+$clr-primary-90: #132418;
+$clr-primary-100: #000000;
+
+$clr-neutral-0: #ffffff;
+$clr-neutral-10: #e1e1e0;
+$clr-neutral-20: #c3c3c2;
+$clr-neutral-30: #a7a6a5;
+$clr-neutral-40: #8b8a89;
+$clr-neutral-50: #706f6e;
+$clr-neutral-60: #595857;
+$clr-neutral-70: #434242;
+$clr-neutral-80: #2e2e2d;
+$clr-neutral-90: #1a1a1a;
+$clr-neutral-100: #000000;
+
+$clr-status-500: #53bdeb;
+
+$clr-bg-beige: #f5f5dc;
+$clr-bg-messages: #dcf8c6;
+
+$clr-primary-0-dark: #1dab62;
+$clr-primary-10-dark: #46b573;
+$clr-primary-20-dark: #62be83;
+$clr-primary-30-dark: #7bc894;
+$clr-primary-40-dark: #92d1a6;
+$clr-primary-50-dark: #a8dbb7;
+
+:root {
+
+  --color-main-background: #{color.adjust($clr-neutral-10, $lightness: 15%)};
+  --color-main-text: #{$clr-neutral-90};    
   
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-header-text: #{$clr-neutral-90};  
+  --color-secondary-text: #{$clr-neutral-30};
+  --color-input-stroke-focus: #{$clr-primary-50};
+  --color-input-background: #{color.adjust($clr-neutral-10, $lightness: 15%)};
+  --color-button-background: #{$clr-primary-30};
+  --color-status-read: #{$clr-status-500};
+  --color-status-unread: #{$clr-neutral-30};
+  --color-logo: #{$clr-primary-50}; 
+  --color-message-background-user: #{$clr-bg-messages};
+  --color-message-background-contact: var(--color-input-background);  
+  --color-button-outline: #{$clr-primary-50};
+  --color-page-title: #{$clr-primary-70};
+  --color-stroke-subtle: #{$clr-neutral-10};
+  --color-item-hover: #{color.adjust($clr-neutral-10, $lightness: 10%)};
+  --color-chat-background: #{color.adjust($clr-neutral-10, $lightness: 7%)};
+  --color-loading-stroke: #{$clr-neutral-10};  
+  --color-loading-thumb: #{$clr-primary-50};
+  --color-data-text: var(--color-secondary-text);
+  --color-scrollbar-thumb: #{$clr-neutral-20};  
 
-  --color-neutral-100: #f8f9fa;
-  --color-neutral-200: #ece5dd;
-  --color-neutral-300: #f5f4f2;
-  --color-neutral-400: #c7c2bb;
-  --color-neutral-450: #636261;
-  --color-neutral-500:#3b4a54;   
 }
 
-.dark-theme {
-  :root {
-      
+@media (prefers-color-scheme: dark) {
+  :root { 
+  
+    --color-main-background: #{$clr-neutral-90};
+    --color-main-text: #{$clr-neutral-10};  
+    
+    --color-header-background: #{color.adjust($clr-neutral-10, $lightness: 15%)};
+    --color-header-text: #{$clr-neutral-10};  
+    --color-secondary-text: #{$clr-neutral-30};
+    --color-input-stroke-focus: #{$clr-primary-50};
+    --color-input-background: #{color.adjust($clr-neutral-80, $lightness: 7%)};
+    --color-button-background: #{$clr-primary-60};
+    --color-status-read: #{$clr-status-500};
+    --color-status-unread: #{$clr-neutral-30};
+    --color-logo: #{$clr-primary-50}; 
+    --color-message-background-user: #{color.adjust($clr-primary-80, $lightness: 5%)}; 
+    --color-message-background-contact: var(--color-input-background); 
+    --color-data-text: #{$clr-neutral-10};
+    --color-button-outline: #{$clr-primary-50};
+    --color-page-title: #{$clr-primary-10};
+    --color-stroke-subtle: #{$clr-neutral-80};
+    --color-item-hover: #{color.adjust($clr-neutral-80, $lightness: 2%)};
+    --color-chat-background: #{$clr-neutral-80};
+    --color-loading-stroke: #{$clr-neutral-10};    
+    --color-scrollbar-thumb: #{$clr-neutral-20};  
+    
   }    
 }

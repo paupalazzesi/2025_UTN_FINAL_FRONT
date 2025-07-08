@@ -1,19 +1,14 @@
-@use './media-queries';
+@use "./media-queries";
 
 :root {
-    
-    --ff-base: "helvetica", "arial", sans-serif;
-    --color-font-base: var(--color-brand-900);    
-    --lh-base: 1.5;
-    --fw-base: 400; 
-
-    --fs-base: 16px;    
-
+	--ff-base: "helvetica", "arial", sans-serif;	
+	--lh-base: 1.5;
+	--fw-base: 400;
+	--fs-base: 16px;
 }
 
 @media screen and (min-width: 1920px) {
-    :root {
-        --fs-base: 0.83vw;
-    }
+	:root {
+		--fs-base: 0.83vw;
+	}
 }
-

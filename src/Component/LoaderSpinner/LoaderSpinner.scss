@@ -1,29 +1,27 @@
 .spinner-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-white);
-    width: 100vw;
-    height: 100vh;    
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--color-main-background);
+	width: 100vw;
+	height: 100vh;
 }
 
 .spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid var(--color-neutral-100);
-    border-top: 5px solid var(--color-accent-300);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    
+	width: 50px;
+	height: 50px;
+	border: 5px solid var(--color-loading-stroke);
+	border-top: 5px solid var(--color-status-read);
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
 
-    100% {
-        transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }
-
