@@ -7,4 +7,10 @@
 		overflow-y: auto;
 		background-color: var(--color-main-background);
 	}
+
+	.main-header {
+		display: grid;
+		grid-template-columns: auto auto 1fr;	
+		justify-items: end;	
+	}
 }

@@ -21,7 +21,7 @@ export default function ProfileScreen() {
             </header>                    
             <main>
                 <div className="contact-detail_info">
-                    <ContactImage img={contact.img} name={contact.name}/>
+                    <ContactImage img={contact.img} contact_name={contact.name}/>
                     <h2 className="contact-detail_name">{contact.name}</h2>
                     <div className="contact-detail_last-time">Últ. vez: {contact.last_time_connected}</div>
                 </div>

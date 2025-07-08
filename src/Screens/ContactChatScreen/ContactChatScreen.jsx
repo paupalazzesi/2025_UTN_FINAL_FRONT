@@ -38,7 +38,7 @@ export default function ContactChatScreen() {
                     className="main-header_contact"
                 >
                     <ContactImage
-                        name={contact.name}
+                        contact_name={contact.name}
                         img={contact.img}
                     />
                     <div className="main-header_info">

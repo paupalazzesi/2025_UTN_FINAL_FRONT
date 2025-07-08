@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
 import "./ThemeToggle.scss";
 
-const getPreferredTheme = () => {
+export default function ThemeToggle() {
+
+	const getPreferredTheme = () => {
 	if (localStorage.getItem("theme")) {
 		return localStorage.getItem("theme");
 	}
@@ -9,9 +11,8 @@ const getPreferredTheme = () => {
 		return "dark";
 	}
 	return "light";
-};
+    };
 
-export default function ThemeToggle() {
 	const [theme, setTheme] = useState(getPreferredTheme());
 
 	useEffect(() => {
@@ -29,7 +30,7 @@ export default function ThemeToggle() {
 			onClick={toggleTheme}
 			aria-label="Toggle dark/light mode">
 			<span className="theme-toggle__icon" aria-hidden="true">
-				{theme === "dark" ? "🌙" : "☀️"}
+				{theme === "dark" ? "☀️" : "🌙"}
 			</span>
 		</button>
 	);

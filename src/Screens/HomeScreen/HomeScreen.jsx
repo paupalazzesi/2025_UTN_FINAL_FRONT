@@ -9,9 +9,9 @@ export default function HomeScreen() {
 	const {contacts} = useContext(ContactContext);
 	return (
 		<div className="home-screen">
-			<header className="main-header">
+			<header className="main-header">				
 				<FaWhatsapp className="main-header_logo" />
-				<h1 className="main-header_main-title">WhatsApp</h1>
+				<h1 className="main-header_main-title">WhatsApp</h1>				
 				<ThemeToggle />
 			</header>
 			<main className="home-screen_contact-list_scroll">
