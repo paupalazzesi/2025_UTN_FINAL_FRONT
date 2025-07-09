@@ -1,8 +1,8 @@
-import mook_data from "../data/contact-mook"
+import mock_data from "../data/contact-mock"
 
 
 export const getMessagesByContactId = (contact_id) => {
-    for(const contact of mook_data.contacts){
+    for(const contact of mock_data.contacts){
         if(Number(contact.id) === Number(contact_id)){
             return contact.messages
         }

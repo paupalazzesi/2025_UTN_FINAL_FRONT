@@ -46,18 +46,20 @@ const MessagesContextProvider = ({children}) => {
 		}, 1000);
 	};
 
-    const renderMessageStatusIcon = (status) => {
-        if (status === "non-received") {
-            return <i className="bi bi-check2 message_status non-received"></i>;
-        }
-        if (status === "not-seen") {
-            return <i className="bi bi-check2-all message_status not-seen"></i>;
-        }
-        if (status === "seen") {
-            return <i className="bi bi-check2-all message_status seen"></i>;
-        }
-        return null;
-    };
+	// lastMessageUser: pass the user of the last message (e.g. 'YO')
+	const renderMessageStatusIcon = (status, lastMessageUser) => {
+		if (lastMessageUser !== 'YO') return null;
+		if (status === "non-received") {
+			return <i className="bi bi-check2 message_status non-received"></i>;
+		}
+		if (status === "not-seen") {
+			return <i className="bi bi-check2-all message_status not-seen"></i>;
+		}
+		if (status === "seen") {
+			return <i className="bi bi-check2-all message_status seen"></i>;
+		}
+		return null;
+	};
 
 	return (
 		<MessagesContext.Provider
@@ -67,7 +69,7 @@ const MessagesContextProvider = ({children}) => {
 				addNewMessage: addNewMessage,
 				handleDeleteMessage: handleDeleteMessage,
 				loadMessages: loadMessages,
-                renderMessageStatusIcon: renderMessageStatusIcon,
+				renderMessageStatusIcon: renderMessageStatusIcon,
 			}}>
 			{children}
 		</MessagesContext.Provider>

@@ -1,6 +1,6 @@
-import mook_data from "../data/contact-mook"
+import mock_data from "../data/contact-mock"
 
 
 export const getContactList = () => {
-    return mook_data.contacts
+    return mock_data.contacts
 }

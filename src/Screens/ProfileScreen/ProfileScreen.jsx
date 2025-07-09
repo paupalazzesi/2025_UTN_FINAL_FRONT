@@ -20,7 +20,7 @@ export default function ProfileScreen() {
                 </Link>   
             </header>                    
             <main>
-                <div className="contact-detail_info">
+                <div className="contact-detail_main-info">
                     <ContactImage img={contact.img} contact_name={contact.name}/>
                     <h2 className="contact-detail_name">{contact.name}</h2>
                     <div className="contact-detail_last-time">Últ. vez: {contact.last_time_connected}</div>
@@ -30,7 +30,15 @@ export default function ProfileScreen() {
                     <button><i class="bi bi-telephone"></i>Call</button>
                     <button><i class="bi bi-camera-video"></i>Video</button>
                     <button><i class="bi bi-search"></i>Search</button>
-                </div>              
+                </div> 
+
+                <ul className='contact-detail_settings'>
+                    <li>
+                        <span>Info</span>
+                        <p></p>
+                    </li>
+                                      
+                </ul>               
                 
             </main>
         </div>

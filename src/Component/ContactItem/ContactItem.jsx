@@ -13,7 +13,7 @@ const ContactItem = ({
 	unread_messages,
 }) => {
 
-    const { renderMessageStatusIcon } = useContext(MessagesContext);
+	const { renderMessageStatusIcon } = useContext(MessagesContext);
 
 	return (
 		<Link to={`/contacts/${id}/messages`} className="contact-item">
@@ -26,7 +26,7 @@ const ContactItem = ({
 					</span>
 				</div>
 				<div className="contact-item_last-message">
-					{renderMessageStatusIcon(last_message.status)}
+					{renderMessageStatusIcon(last_message.status, last_message.user)}
 					<span className="last-message_text">
 						{last_message.text}
 					</span>
