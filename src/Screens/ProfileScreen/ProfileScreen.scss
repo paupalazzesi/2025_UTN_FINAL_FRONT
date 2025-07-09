@@ -16,6 +16,15 @@
 		}
 	}
 
+	main {
+		max-width: 70%;
+		margin-inline: auto;
+
+		@media screen and (max-width: 700px) {
+			max-width: unset;
+		}
+	}
+
 	&_main-info {
 		width: 100%;
 		color: var(--color-page-title);
@@ -36,10 +45,15 @@
 			margin-bottom: 8px;
 		}
 
+		&_phone-number {
+			font-size: 1rem;
+			color: var(--color-secondary-text);
+			font-weight: 600;			
+		}
+
 		&_last-time {
 			font-size: 1rem;
-			color: #888;
-			margin-bottom: 18px;
+			color: var(--color-secondary-text);			
 		}
 	}
 
@@ -48,7 +62,7 @@
 		grid-template-columns: repeat(3, minmax(64px, 150px));
 		justify-content: center;
 		gap: 8px;
-		padding: 2rem 1rem;
+		padding: 1rem;
 
 		button {			
 			display: flex;
@@ -67,4 +81,29 @@
 			}
 		}
 	}
+
+	.section {
+		padding: 1rem;
+		background-color: var(--color-profile-section-background);
+		margin-bottom: .5rem;
+		border-radius: 8px;
+
+		span {
+			font-size: 14px;			
+		}
+
+		&_item {
+			padding-block: 1rem;
+			cursor: pointer;
+			transition: all ease .2s;
+
+			> i {
+				margin-right: 1rem;
+			}
+			&:hover {
+				color: var(--color-button-outline)
+			}
+		}
+	}
+	
 }

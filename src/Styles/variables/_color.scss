@@ -105,7 +105,7 @@ $clr-primary-50-dark: #a8dbb7;
 	--color-main-text: #{$clr-neutral-90};
 
 	--color-header-text: #{$clr-neutral-90};
-	--color-secondary-text: #{$clr-neutral-30};
+	--color-secondary-text: #{$clr-neutral-50};
 	--color-input-stroke-focus: #{$clr-primary-50};
 	--color-input-background: #{color.adjust($clr-neutral-10, $lightness: 15%)};
 	--color-button-background: #{$clr-primary-30};
@@ -123,6 +123,7 @@ $clr-primary-50-dark: #a8dbb7;
 	--color-loading-thumb: #{$clr-primary-50};
 	--color-data-text: var(--color-secondary-text);
 	--color-scrollbar-thumb: #{$clr-neutral-20};
+	--color-profile-section-background: #{color.adjust($clr-neutral-10, $lightness: 1%)};
 }
 
 [data-theme="dark"] {
@@ -149,6 +150,7 @@ $clr-primary-50-dark: #a8dbb7;
 	--color-chat-background: #{$clr-neutral-80};
 	--color-loading-stroke: #{$clr-neutral-10};
 	--color-scrollbar-thumb: #{$clr-neutral-20};
+	--color-profile-section-background: #{color.adjust($clr-neutral-90, $lightness: 2%)};
 }
 
 

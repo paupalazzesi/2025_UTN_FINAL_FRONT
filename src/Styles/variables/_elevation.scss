@@ -10,12 +10,12 @@
 //     }
 // }
 
-[data-theme="light"] {
+[data-theme="dark"] {
      --elevation-01: 0px 4px 4px 0px rgba(13, 13, 13, 0.1);
      --elevation-02: 0px 2px 4px 0px rgba(13, 13, 13, 0.1);
 }
 
 [data-theme="dark"] {
-     --elevation-01: 0;
-     --elevation-02: 0;
+     --elevation-01: 0px 4px 4px 0px rgba(242, 242, 242, 0.018);
+     --elevation-02: 0px 4px 4px 0px rgba(34, 34, 34, 0.1);
 }

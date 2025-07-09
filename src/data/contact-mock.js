@@ -7,6 +7,7 @@ const contacts = [
     last_time_connected: "10:32",
     img: images.michael,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0001",
     description: "World's Best Boss ☕ | That's what she said!",
     messages: [
       {
@@ -31,6 +32,7 @@ const contacts = [
     last_time_connected: "Online",
     img: images.jim,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0002",
     description: "Bears. Beets. Battlestar Galactica.",
     messages: [
       {
@@ -48,6 +50,7 @@ const contacts = [
     last_time_connected: "09:18",
     img: images.pam,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0003",
     description: "Artist 🎨 | Receptionist | Dreamer",
     messages: [
       {
@@ -65,6 +68,7 @@ const contacts = [
     last_time_connected: "10:35",
     img: images.dwight,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0004",
     description: "Assistant to the Regional Manager. Beet farmer. 🥇",
     messages: [
       {
@@ -82,6 +86,7 @@ const contacts = [
     last_time_connected: "08:50",
     img: images.angela,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0005",
     description: "Cats. Cats. More cats. 🐱",
     messages: [
       {
@@ -99,6 +104,7 @@ const contacts = [
     last_time_connected: "Yesterday",
     img: images.kevin,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0006",
     description: "I just want to sit on the beach and eat hot dogs. 🏖️🌭",
     messages: [
       {
@@ -116,6 +122,7 @@ const contacts = [
     last_time_connected: "08:00",
     img:  images.stanley,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0007",
     description: "Did I stutter? Only here for Pretzel Day.",
     messages: [
       {
@@ -133,6 +140,7 @@ const contacts = [
     last_time_connected: "10:00",
     img:  images.ryan,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0008",
     description: "Temp turned entrepreneur. Always hustling.",
     messages: [
       {
@@ -150,6 +158,7 @@ const contacts = [
     last_time_connected: "Online",
     img: images.kelly,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0009",
     description: "Fashion. Drama. Shopping. Repeat. ✨🛍️",
     messages: [
       {
@@ -167,6 +176,7 @@ const contacts = [
     last_time_connected: "04/05/25",
     img: images.creed,
     unread_messages: 0,
+    phoneNumber: "+1-570-555-0010",
     description: "Quality Assurance... and other things. 🕵️‍♂️",
     messages: [
       {
