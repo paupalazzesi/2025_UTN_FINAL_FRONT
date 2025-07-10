@@ -20,6 +20,7 @@
 		resize: none;
 		width: 100%;
 		background-color: var(--color-input-background);
+		border: 1px solid var(--color-stroke-subtle);     
 		box-shadow: var(--elevation-02);
 		&::placeholder {
 			color: var(--color-secondary-text);
