@@ -1,9 +1,12 @@
+@use "../utilities/truncate-text";
+
 .main-header {
 	height: var(--main-header-height);
 	background-color: var(--color-main-background);
 	color: var(--color-header-text);
 	z-index: 1000;
 	box-shadow: var(--elevation-01);
+	min-width: 0;
 
 	display: flex;
 	align-items: center;	
@@ -20,7 +23,7 @@
 
 	&_section-title {
 		font-size: 1.25rem;
-		color: var(--color-page-text);
+		color: var(--color-page-text);		
 	}
 
 	&_logo {
@@ -49,7 +52,7 @@
 	&_name {
 		font-size: 1.25rem;
 		font-weight: 600;
-		color: var(--color-header-text);
+		color: var(--color-header-text);		
 	}
 
 	&_last-time {

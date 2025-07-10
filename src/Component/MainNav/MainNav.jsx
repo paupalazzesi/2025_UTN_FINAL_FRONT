@@ -11,7 +11,7 @@ export default function MainNav() {
           <li className="nav-list_item" aria-label='Contacts'>
             <a href="#">
               <i class="bi bi-chat-left-text"></i>
-              <label htmlFor="">States</label>
+              <label htmlFor="">Contacts</label>
             </a>
           </li>
           <li className="nav-list_item" aria-label='States'>

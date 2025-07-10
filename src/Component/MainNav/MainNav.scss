@@ -3,7 +3,7 @@
   display: flex;
   height: auto;
   width: 100%;
-  padding: 16px;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -20,11 +20,16 @@
       align-items: center;
       color: var(--color-secondary-text);
       i {
-        font-size: 24px;        
+        font-size: 1.5rem;        
       }
       label {
-        font-size: 12px;        
+        font-size: 0.75rem;        
       }
+     
+      &:first-of-type a {
+        color: var(--color-logo);
+      }
+        
     }
   }
   .user-profile {
@@ -43,17 +48,13 @@
       .nav-list {
         flex-direction: column;
         justify-content: start;        
-        gap: 8px;
-
-        &_item {
-          
-        }
+        gap: 0.5rem;        
       }
       .user-profile {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
       }
     }
 }

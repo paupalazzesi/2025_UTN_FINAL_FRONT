@@ -3,21 +3,11 @@
     background-color: var(--color-chat-background);
     display: flex;
     flex-direction: column;
-    gap: 16px ;  
+    gap: 1rem;  
     color: black;
-    padding: 16px;
-    padding-bottom: 120px;
+    padding: 1rem;
+    padding-bottom: 7.5rem;
     overflow-y: auto;  
     scrollbar-gutter: stable both-edges; 
-}
-
-@media screen and (min-width: 1920px) {
-    .message-list {
-        gap: 0.83vw;
-        padding: 0.83vw;
-    }
-    button {
-        padding-inline: 0.83vw;
-    }
 }
 
