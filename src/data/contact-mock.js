@@ -88,7 +88,7 @@ const contacts = [
       user: "USUARIO",
       time: "12:07",
       id: 4,
-      text: "[Image: Dwight with a paper badge]",
+      text: "yup!",
       status: "seen"
     },
     {
@@ -202,7 +202,7 @@ const contacts = [
         time: "14:04",
         id: 4,
         text: "👍",
-        status: "seen"
+        status: "non-received"
       }
     ],
   },
@@ -348,7 +348,7 @@ const contacts = [
         time: "14:13",
         id: 3,
         text: "Okay… I think I’ll check with Dwight instead. 😂",
-        status: "seen"
+        status: "not-seen"
       }
     ],
   },
