@@ -19,12 +19,8 @@
 	main {		
 		overflow-y: auto;
 		max-width: unset;
-		padding-inline: 0.75rem;
-
-		@media screen and (min-width: 700px) {			
-			max-width: 70%;
-		    margin-inline: auto;
-		}
+		padding-inline: 0.75rem;		
+		margin-inline: auto;		
 	}
 
 	&_main-info {
@@ -64,7 +60,7 @@
 		grid-template-columns: repeat(3, minmax(4rem, 9.375rem));
 		justify-content: center;
 		gap: 0.5rem;
-		padding: 1rem;
+		padding: 1rem 0;
 
 		button {			
 			display: flex;
