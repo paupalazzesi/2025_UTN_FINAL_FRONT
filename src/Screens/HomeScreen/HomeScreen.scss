@@ -1,16 +1,44 @@
+@use '../../Styles/variables/media-queries';
+
+
 .home-screen {
-	display: grid;
-	grid-template-rows: auto 1fr;
+	background-color: var(--color-main-background);
 	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr;	
 
 	&_contact-list_scroll {
-		overflow-y: auto;
-		background-color: var(--color-main-background);
+		overflow-y: auto;		
 	}
 
 	.main-header {
 		display: grid;
 		grid-template-columns: auto auto 1fr;	
-		justify-items: end;	
+		justify-items: end;		
+	}
+}
+
+
+@media screen and (min-width: 600px) {  
+    .home-screen {		
+		grid-template-areas: 
+		 "sidebar header"
+		 "sidebar main";
+		grid-template-columns: auto 1fr;
+		.main-header {
+		 grid-area: header;
+		}
+		.main-content {
+		  grid-area: main;
+	    }
+		.main-nav {
+		  grid-area: sidebar;
+	    }
+		
+		.main-header {
+			.theme-toggle {
+				display: none;
+			}
+	    }
 	}
 }
