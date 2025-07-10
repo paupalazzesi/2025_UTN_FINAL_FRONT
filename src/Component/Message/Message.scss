@@ -58,10 +58,10 @@
 }
 
 // Delete button visible on hover
-.message:has(.message_btn-delete) {
-	cursor: pointer;
+.message:has(.message_btn-delete) {	
 	&:hover .message_btn-delete {
 		opacity: 1;
+		cursor: pointer;
 	}
 }
 
