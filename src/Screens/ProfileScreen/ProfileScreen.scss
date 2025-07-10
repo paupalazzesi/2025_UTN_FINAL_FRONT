@@ -17,11 +17,14 @@
 	}
 
 	main {
+		max-height: 100%;
+		overflow-y: auto;
 		max-width: 70%;
 		margin-inline: auto;
 
 		@media screen and (max-width: 700px) {
 			max-width: unset;
+			padding-inline: 12px;
 		}
 	}
 
