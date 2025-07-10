@@ -8,19 +8,19 @@ export default function MainNav() {
   return (
     <nav className="main-nav">
         <ul className="nav-list">
-          <li className="nav-list_item" title='Contacts' aria-label='Contacts'>
+          <li className="nav-list_item" aria-label='Contacts'>
             <a href="#">
               <i class="bi bi-chat-left-text"></i>
               <label htmlFor="">States</label>
             </a>
           </li>
-          <li className="nav-list_item" title='States' aria-label='States'>
+          <li className="nav-list_item" aria-label='States'>
             <a href="#">
               <i class="bi bi-phone-vibrate"></i>
               <label htmlFor="">States</label>
             </a>
           </li>
-          <li className="nav-list_item" title='Groups' aria-label='Contacts'>
+          <li className="nav-list_item" aria-label='Contacts'>
             <a href="#">
               <i class="bi bi-people"></i>
               <label htmlFor="">Groups</label>

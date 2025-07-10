@@ -24,15 +24,18 @@
 		grid-template-areas: 
 		 "sidebar header"
 		 "sidebar main";
-		grid-template-columns: auto 1fr;
+		grid-template-columns: auto 1fr;		
+
 		.main-header {
 		 grid-area: header;
 		}
 		.main-content {
 		  grid-area: main;
+		  padding: 8px;
 	    }
 		.main-nav {
 		  grid-area: sidebar;
+		  border-right: solid 1px var(--color-stroke-subtle);
 	    }
 		
 		.main-header {
