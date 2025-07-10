@@ -30,7 +30,7 @@ export default function ThemeToggle() {
 			onClick={toggleTheme}
 			aria-label="Toggle dark/light mode">
 			<span className="theme-toggle__icon" aria-hidden="true">
-				{theme === "dark" ? "☀️" : "🌙"}
+				{theme === "dark" ? <i class="bi bi-brightness-high"></i> : <i class="bi bi-moon"></i>}
 			</span>
 		</button>
 	);
