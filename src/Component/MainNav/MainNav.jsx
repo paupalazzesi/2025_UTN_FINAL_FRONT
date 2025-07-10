@@ -8,7 +8,7 @@ export default function MainNav() {
   return (
     <nav className="main-nav">
         <ul className="nav-list">
-          <li className="nav-list_item" aria-label='Contacts'>
+          <li className="nav-list_item selected" aria-label='Contacts'>
             <a href="#">
               <i class="bi bi-chat-left-text"></i>
               <label htmlFor="">Contacts</label>

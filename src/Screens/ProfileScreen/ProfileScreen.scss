@@ -16,15 +16,14 @@
 		}
 	}
 
-	main {
-		max-height: 100%;
+	main {		
 		overflow-y: auto;
-		max-width: 70%;
-		margin-inline: auto;
+		max-width: unset;
+		padding-inline: 0.75rem;
 
-		@media screen and (max-width: 700px) {
-			max-width: unset;
-			padding-inline: 12px;
+		@media screen and (min-width: 700px) {			
+			max-width: 70%;
+		    margin-inline: auto;
 		}
 	}
 
@@ -37,15 +36,15 @@
 		align-items: center;
 
 		.contact-image_container {
-			width: 100px;
-			height: 100px;
+			width: 6.25rem;
+			height: 6.25rem;
 		}
 
 		&_name {
 			font-size: 1.7rem;
 			font-weight: 700;
 			color: var(--color-page-title);
-			margin-bottom: 8px;
+			margin-bottom: 0.5rem;
 		}
 
 		&_phone-number {
@@ -62,16 +61,16 @@
 
 	&_actions {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(64px, 150px));
+		grid-template-columns: repeat(3, minmax(4rem, 9.375rem));
 		justify-content: center;
-		gap: 8px;
+		gap: 0.5rem;
 		padding: 1rem;
 
 		button {			
 			display: flex;
 			flex-direction: column;
-			padding: 8px;
-			border-radius: 8px;
+			padding: 0.5rem;
+			border-radius: 0.5rem;
 			border: solid 1px var(--color-stroke-subtle);			
 			background-color: inherit;
 			cursor: pointer;
@@ -88,17 +87,17 @@
 	.section {
 		padding: 1rem;
 		background-color: var(--color-profile-section-background);
-		margin-bottom: .5rem;
-		border-radius: 8px;
+		margin-bottom: 0.5rem;
+		border-radius: 0.5rem;
 
 		span {
-			font-size: 14px;			
+			font-size: 0.875rem;			
 		}
 
 		&_item {
 			padding-block: 1rem;
 			cursor: pointer;
-			transition: all ease .2s;
+			transition: all ease 0.2s;
 
 			> i {
 				margin-right: 1rem;
