@@ -9,7 +9,8 @@ Esta aplicación permite:
 - Enviar mensajes en el chat de cada contacto  
 - Eliminar mensajes  
 - Ver detalles del contacto  
-- Buscar chats de contactos  
+- Buscar chats de contactos
+- Cambiar entre Light y Dark Mode 
 
 ## ✅ Requisitos del Trabajo Final
 
